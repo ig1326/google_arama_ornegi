@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=apps" />
+    
+    <style>
+        body{
+            margin: 6px;
+            padding: 0;
+            background: #202124;
+            font-family:Roboto;
+            font-size: 0.8em;
+        }
+
+        .navbar{
+            display: flex;
+            justify-content: flex-end; /* Ögeleri sağa hizalar */
+            align-items: center; /* Dikey hizalamayı ortalar */
+            gap: 1em; 
+        }
+
+        a{
+            text-decoration: none;
+            color: aliceblue;
+            padding: 0.3em;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+        .google-resim{
+            height: 3em;
+            width: 3em;
+            border: 1px solid white;
+            border-radius: 50%;
+        }
+
+        .container-1{
+            text-align: center;
+            margin-top: 18em;
+        }
+
+        .form-text{
+            margin-top: 1em;
+            padding-left: 20px;
+            width: 40em;
+            height: 3em;
+            background: #424654;
+            border-top-left-radius: 2em;
+            border-top-right-radius:2em ;
+            border-bottom-left-radius:2em ;
+            border-bottom-right-radius:2em ;
+            color: #fff;
+        }
+
+        input[type="text"]:focus {
+            background-color: #606676; /* Odaklanınca arka plan sarı olacak */
+            outline: none;
+            border: none;
+            cursor:text ; 
+        }
+        
+        input[type="submit"]{
+            margin-top: 2em;
+            margin-left:1em ;
+            padding: 0.8em;
+            color: #fff;
+            background: #424242;
+            outline: none;
+            border: none;
+            border-radius: 0.2em;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Gmail</a>
+        <a href="#">Görseller</a>
+        <a href="#"><span class="material-symbols-outlined">
+            apps
+            </span></a>
+        <a href="#"><img src="18.png" class="google-resim" alt=""></a>
+    </div>
+    <div class="container-1">
+        <img src="googlelogo.png" alt="">
+        <form action="https://www.google.com/search">
+            <input type="text" name="q" class="form-text">
+            <div>
+                <input type="submit" value="Google'da Ara"  >
+                <input type="submit" name="btnI" value="Kendimi Şanslı Hissediyorum">
+            </div>
+        </form>
+    </div>
+    <div class="container-2">
+        
+    </div>
+</body>
+</html>
